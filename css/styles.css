@@ -1,0 +1,163 @@
+.container-fluid{
+	padding: 0;
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+}
+
+.logo-bar{
+	margin-top: 10px;
+}
+
+.logo{
+	height: 25px;
+	margin-top: 12px;
+}
+
+.mail-logo{
+	height: 20px;
+	padding-right: 5px;
+}
+
+.linkedin-logo{
+	height: 20px;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+.info{
+	margin-top: 30px;
+}
+
+.left-border{
+	padding-left: 20px;
+}
+
+.right-border{
+	padding-right: 20px;
+}
+
+.flex-align-left{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row-reverse;
+}
+
+.flex-align-right{
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.info-column-text{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.who-am-i-color{
+	height: 100%;
+	width: 10px;
+	background: #ffde59;
+	margin-left: 5px;
+}
+
+.wat-studeerde-ik-color{
+	height: 100%;
+	width: 10px;
+	background: #ff914d;
+	margin-right: 5px;
+}
+
+.wat-doe-ik-color{
+	height: 100%;
+	width: 10px;
+	background: #38b6ff;
+	margin-left: 5px;
+}
+
+.wat-kan-ik-color{
+	height: 100%;
+	width: 10px!important;
+	background: #7ed957;
+	margin-right: 5px;
+}
+
+.who-am-i{
+	text-align: right;
+}
+
+.wat-doe-ik{
+	text-align: right;
+}
+
+
+.profile-pic-container{
+	padding-top: 30px;
+
+}
+
+.profile-pic{
+	border-radius: 50%;
+	max-width: 231px;
+	height: auto;
+	align-self: flex-start;
+}
+
+@media screen and (max-width: 1200px) {
+    .left-border{
+		padding-left: 0px;
+	}
+
+	.right-border{
+		padding-right: 0px;
+	} 
+
+	.wie-ben-ik-group{
+		order:1;
+	}
+
+	.wat-doe-ik-group{
+		margin-top: 10px;
+		order:3;
+	}
+
+	.wat-studeerde-ik-group{
+		margin-top: 10px;
+		order:4;
+	}
+
+	.wat-kan-ik-group{
+		order:2;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.flex-align-right{
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: row-reverse;
+	}
+
+	.who-am-i{
+		text-align: left;
+	}
+
+	.who-am-i-color{
+		margin-left: 0px;
+		margin-right: 5px;
+	}
+
+	.wat-doe-ik{
+		text-align: left;
+	}
+
+	.wat-doe-ik-color{
+		margin-left: 0px;
+		margin-right: 5px;
+	}
+
+	.wat-studeerde-ik-group{
+		margin-top: 10px;
+	}
+}
