@@ -5,6 +5,8 @@
     line-height: 1.42857143;
 }
 
+/* LOGO ICONS AND PROFILE */
+
 .logo-bar{
 	margin-top: 10px;
 }
@@ -28,6 +30,20 @@
 a{
 	color: black;
 }
+
+.profile-pic-container{
+	padding-top: 30px;
+
+}
+
+.profile-pic{
+	border-radius: 50%;
+	max-width: 231px;
+	height: auto;
+	align-self: flex-start;
+}
+
+/* INFO BLOCK */
 
 .info{
 	margin-top: 30px;
@@ -92,20 +108,8 @@ a{
 	text-align: right;
 }
 
-
-.profile-pic-container{
-	padding-top: 30px;
-
-}
-
-.profile-pic{
-	border-radius: 50%;
-	max-width: 231px;
-	height: auto;
-	align-self: flex-start;
-}
-
-@media screen and (max-width: 1200px) {
+/* <= xl */
+@media screen and (max-width: 1199px) {
     .left-border{
 		padding-left: 0px;
 	}
@@ -133,6 +137,7 @@ a{
 	}
 }
 
+/* <= sm */
 @media screen and (max-width: 767px) {
 	.flex-align-right{
 		display: flex;
@@ -144,21 +149,51 @@ a{
 		text-align: left;
 	}
 
-	.who-am-i-color{
-		margin-left: 15px; /*not sure why this is needed */
-		margin-right: 5px;
-	}
 
 	.wat-doe-ik{
 		text-align: left;
 	}
 
+	.who-am-i-color{
+		margin-left: 15px; /*not sure why this is needed */
+		margin-right: 5px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	..wat-kan-ik-color{
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
 	.wat-doe-ik-color{
 		margin-left: 0px;
 		margin-right: 5px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	.wat-studeerde-ik-color{
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	.wat-doe-ik-group{
+		margin-top: 0px;		
+	}
+
+	.wat-studeerde-ik-group{
+		margin-top: 0px;
 	}
 
 	a {
 		font-size: 0;
+	}
+}
+
+/* remove handwriting on very small screens */
+@media screen and (max-width: 349px) {
+	.logo{
+		display: none;
 	}
 }
